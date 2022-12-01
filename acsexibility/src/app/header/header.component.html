@@ -1,18 +1,30 @@
-<!-- Styly CSS -->
+<div class="background">
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__listitem">About
+        <ul class="nav__listitemdrop">
+          <li>Our Team</li>
+          <li>Our Process</li>
+          <li>History</li>
+        </ul>
+      </li>
+      <li class="nav__listitem">Work
+        <ul class="nav__listitemdrop">
+          <li>Portfolio</li>
+          <li>Showcase</li>
+        </ul>
+      </li>
+      <li class="nav__listitem">Contact</li>
+    </ul>
+  </nav>
 
-<div class = header>
+  <div class=header>
 
-  <div id = logo>
+    <div id=logo>
+      <a [routerLink]="['/home']"> <img alt="Bouton pour accéder à la page d'accueil" id="home" src="../../assets/img/home.png"></a>
+      <img alt="Logo du site internet" id=picLogo src="../../assets/img/logo.png">
 
-    <a [routerLink]="['/home']"> <img id = "home" src="../../assets/img/home.png" alt="Bouton pour accéder à la page d'accueil"></a>
-    <img id = picLogo src="../../assets/img/logo.png" alt="Logo du site internet">
-
+    </div>
 
   </div>
-
-  <div id = navbar>
-
-
-  </div>
-
 </div>
