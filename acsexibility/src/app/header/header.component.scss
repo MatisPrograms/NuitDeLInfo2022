@@ -15,7 +15,6 @@ $clr-gray700: #161d34;
 $radius: 0.2rem;
 
 .nav {
-  position: fixed;
   right: 1em;
 
   &__list {
@@ -113,4 +112,8 @@ $radius: 0.2rem;
   width: 70px;
   margin-left: 2em;
   margin-right: 8em;
+}
+
+a{
+  text-decoration: none;
 }

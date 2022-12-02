@@ -5,20 +5,14 @@
 
       <div class="nav">
         <ul class="nav__list">
-          <li class="nav__listitem">About
+          <a [routerLink]="['/home']"><li class="nav__listitem">Home</li></a>
+          <li class="nav__listitem">Jeux
             <ul class="nav__listitemdrop">
-              <li>Our Team</li>
-              <li>Our Process</li>
-              <li>History</li>
+              <a [routerLink]="['/games']"><li>Serious Games</li></a>
+              <a [routerLink]="['/games']"><li>Informations</li></a>
             </ul>
           </li>
-          <li class="nav__listitem">Work
-            <ul class="nav__listitemdrop">
-              <li>Portfolio</li>
-              <li>Showcase</li>
-            </ul>
-          </li>
-          <li class="nav__listitem">Contact</li>
+          <a [routerLink]="['/home']"><li class="nav__listitem">Informations</li></a>
         </ul>
       </div>
     </div>

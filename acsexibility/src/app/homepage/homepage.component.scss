@@ -1,4 +1,28 @@
-p{
-  color: black;
+@import "../../styles/card";
+
+.align {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  margin: 3em;
 }
 
+img{
+  max-height: 5em;
+  width: auto;
+  padding-bottom: 1em;
+}
+
+p{
+  color: black;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+
+.displayed {
+  display: grid;
+  place-items: center;
+  padding-bottom: 2em;
+}
