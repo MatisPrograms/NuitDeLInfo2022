@@ -1,3 +1,34 @@
+// Modern bubble style
+@mixin acs-bubble-style($color, $border-color, $text-color) {
+  background-color: $color;
+  border: 1px solid $border-color;
+  color: $text-color;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  display: inline-block;
+}
+
+// interactive bubble style
+@mixin acs-bubble-style-interactive($color, $border-color, $text-color) {
+  @include acs-bubble-style($color, $border-color, $text-color);
+  cursor: pointer;
+  &:hover {
+    background-color: $border-color;
+    color: $color;
+  }
+}
+
+// page background
+.acs-page-background {
+  background-color: #ffffff;
+  padding: 1em;
+}
+
+body {
+  background-color: #ffcedb;
+}
+
 @import './styles/variables.scss';
 
 /* You can add global styles to this file, and also import other style files */
@@ -13,5 +44,11 @@ body {
   background-color: $app-background-color;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

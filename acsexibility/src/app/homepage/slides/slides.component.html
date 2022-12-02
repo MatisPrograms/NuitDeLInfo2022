@@ -1,1 +1,18 @@
-<p>slides works!</p>
+<div class="slideshow-container" style="width: 100%">
+
+  <div *ngFor="let img of this.images" class="mySlides fade" style="width: 100%">
+    <img [src]="this.imagePath + img">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" (click)="this.previousImg()">&#10094;</a>
+  <a class="next" (click)="this.nextImg()">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" (click)="currentSlide(1)"></span>
+  <span class="dot" (click)="currentSlide(2)"></span>
+  <span class="dot" (click)="currentSlide(3)"></span>
+</div>
